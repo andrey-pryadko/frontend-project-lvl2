@@ -23,3 +23,4 @@ if (program.format) console.log('Test format OK');
 // }
 
 console.log(program.args);
+
