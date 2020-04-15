@@ -1,6 +1,5 @@
 /node_modules/
 /dist/
-/del/
 *.log
 .DS_Store
 getdiff.code-workspace
