@@ -1,9 +1,9 @@
 {
   "name": "get-diff-s320",
-  "version": "0.0.50",
+  "version": "0.0.52",
   "description": "CLI utility. Compares two configuration files and shows a difference.",
   "bin": {
-    "gendiff": "./src/bin/gendiff.js"
+    "gendiff": "./dist/bin/gendiff.js"
   },
   "files": [
     "dist"
