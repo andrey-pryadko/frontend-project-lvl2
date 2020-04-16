@@ -1,6 +1,5 @@
 import half from '../src/index';
 
-
 test('test 3. yaml-yaml 1', () => {
   const result3 = `
 {
