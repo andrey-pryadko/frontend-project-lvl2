@@ -8,5 +8,10 @@
 ```sh
 $ npm i -g get-diff-s320
 ```
+### 1. Json.
 
 ![screencast](./img/001.gif)
+
+### 2. Yaml.
+
+![screencast](./img/002.gif)
