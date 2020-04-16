@@ -15,3 +15,7 @@ $ npm i -g get-diff-s320
 ### 2. Yaml.
 
 ![screencast](./img/002.gif)
+
+### 3. Ini.
+
+![screencast](./img/003.gif)

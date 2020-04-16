@@ -1,6 +1,6 @@
 {
   "name": "get-diff-s320",
-  "version": "0.0.53",
+  "version": "0.0.54",
   "description": "CLI utility. Compares two configuration files and shows a difference.",
   "main": "dist/index.js",
   "bin": {
