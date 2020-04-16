@@ -11,6 +11,8 @@ const parseDataFromFile = (src) => {
     data = JSON.parse(fs.readFileSync(configValue));
   } else if (ext === '.yml') {
     data = yaml.safeLoad(fs.readFileSync(configValue));
+  } else if (ext === '.ini') {
+    data = ini.parse(fs.readFileSync(configValue, 'utf-8'));
   }
   return data;
 };

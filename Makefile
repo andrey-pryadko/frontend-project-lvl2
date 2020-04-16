@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npx babel-node 'src/bin/gendiff.js' ./__fixtures__/before.yml ./__fixtures__/after.yml
+	npx babel-node 'src/bin/gendiff.js' ./__fixtures__/before.ini ./__fixtures__/after.ini
 
 publish:
 	npm publish

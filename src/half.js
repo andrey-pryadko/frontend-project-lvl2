@@ -9,20 +9,20 @@ const half = (path1, path2) => {
   const firstKeys = Object.keys(firstData).map((key) => {
     if (secondKeys.includes(key)) {
       if (firstData[key] === secondData[key]) {
-        result.push([`${tab}${tab}${key} = ${firstData[key]}`]);
+        result.push([`${tab}${tab}${key}: ${firstData[key]}`]);
       } else {
-        result.push([`${tab}- ${key} = ${firstData[key]}`]);
-        result.push([`${tab}+ ${key} = ${secondData[key]}`]);
+        result.push([`${tab}- ${key}: ${firstData[key]}`]);
+        result.push([`${tab}+ ${key}: ${secondData[key]}`]);
       }
     } else {
-      result.push([`${tab}- ${key} = ${firstData[key]}`]);
+      result.push([`${tab}- ${key}: ${firstData[key]}`]);
     }
     return key;
   });
 
   secondKeys.map((key) => {
     if (!firstKeys.includes(key)) {
-      result.push([`${tab}+ ${key} = ${secondData[key]}`]);
+      result.push([`${tab}+ ${key}: ${secondData[key]}`]);
     }
     return key;
   });
