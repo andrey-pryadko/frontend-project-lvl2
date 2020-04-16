@@ -1,7 +1,8 @@
 import parseDataFromFile from './parser';
 
 const half = (path1, path2) => {
-  const [firstData, secondData] = parseDataFromFile(path1, path2);
+  const firstData = parseDataFromFile(path1);
+  const secondData = parseDataFromFile(path2);
   const result = [['\n{']];
   const tab = '  ';
   const secondKeys = Object.keys(secondData);
