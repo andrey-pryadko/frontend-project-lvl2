@@ -1,25 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const yaml = require('js-yaml');
+import parseDataFromFile from './parser';
 
-const half = (firstConfig, secondConfig) => {
-  const firstConfigValue = firstConfig;
-  const secondConfigValue = secondConfig;
-  let firstData;
-  let secondData;
-  if (path.extname(firstConfigValue) === '.json') {
-    firstData = JSON.parse(fs.readFileSync(firstConfigValue));
-  } else if (path.extname(firstConfigValue) === '.yml') {
-    firstData = yaml.safeLoad(fs.readFileSync(firstConfigValue));
-    console.log(firstData);
-  }
-  if (path.extname(secondConfigValue) === '.json') {
-    secondData = JSON.parse(fs.readFileSync(secondConfigValue));
-  } else if (path.extname(secondConfigValue) === '.yml') {
-    secondData = yaml.safeLoad(fs.readFileSync(secondConfigValue));
-  }
-  // const firstData = JSON.parse(fs.readFileSync(firstConfigValue));
-  // const secondData = JSON.parse(fs.readFileSync(secondConfigValue));
+const half = (path1, path2) => {
+  const [firstData, secondData] = parseDataFromFile(path1, path2);
   const result = [['\n{']];
   const tab = '  ';
   const secondKeys = Object.keys(secondData);
